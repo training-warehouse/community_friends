@@ -2,12 +2,13 @@
 	<view>
 		<block v-for="(item,index) in list" :key="index">
 			<common-list :item="item" :index="index"></common-list>
+			<divider></divider>
 		</block>
 	</view>
 </template>
 
 <script>
-	import commonList from '../../components/common/common-list.vue'
+	import commonList from '@/components/common/common-list.vue'
 	
 	export default {
 		components:{
