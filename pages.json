@@ -17,10 +17,10 @@
 						"buttons": [{
 							"color": "#333333",
 							"colorPressed": "#FD597c",
-							"float":"right",
-							"fontSize":"22px",
-							"fontSrc":"/static/iconfont.ttf",
-							"text":"\ue668"
+							"float": "right",
+							"fontSize": "22px",
+							"fontSrc": "/static/iconfont.ttf",
+							"text": "\ue668"
 						}]
 					}
 				}
@@ -31,6 +31,30 @@
 			"path": "pages/msg/msg"
 		}, {
 			"path": "pages/my/my"
+		}, {
+			"path": "pages/search/search",
+			"style": {
+				"app-plus": {
+					// 导航栏
+					"titleNView": {
+						"searchInput": {
+							"align": "center",
+							"backgroundColor": "#f5f4f2",
+							"borderRadius": "4px",
+							"placeholder": "搜索帖子",
+							"placeholderColor": "#6d6c67"
+						},
+						"buttons": [{
+							"color": "#333333",
+							"colorPressed": "#FD597c",
+							"float": "right",
+							"fontSize": "15px",
+							"text": "搜索"
+						}]
+					}
+				}
+			}
+
 		}
 	],
 	"globalStyle": {

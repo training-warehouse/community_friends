@@ -5,7 +5,9 @@ import Vue from 'vue'
 Vue.config.productionTip = false
 
 import divider from '@/components/common/divider.vue'
+import nothing from '@/components/common/nothing.vue'
 Vue.component('divider', divider)
+Vue.component('nothing', nothing)
 
 App.mpType = 'app'
 const app = new Vue({
