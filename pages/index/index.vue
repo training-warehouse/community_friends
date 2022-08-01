@@ -15,8 +15,8 @@
 				<scroll-view scroll-y="true" :style="`height:${scrollH}px`" @scrolltolower="loadmore(index)">
 					<template v-if="item.list.length">
 						<!-- 列表 -->
-						<block v-for="(item,i) in item.list" :key="i">
-							<common-list :item="item" :index="i" @follow="follow" @doSupport=doSupport />
+						<block v-for="(it,i) in item.list" :key="i">
+							<common-list :item="it" :index="i" @follow="follow" @doSupport=doSupport />
 							<divider />
 						</block>
 
@@ -129,7 +129,7 @@
 			})
 		},
 		onLoad() {
-			let res = uni.getSystemInfo({
+			uni.getSystemInfo({
 				success: res => {
 					this.scrollH = res.windowHeight - uni.upx2px(101)
 				}
